@@ -1,0 +1,185 @@
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    position: relative;
+}
+
+.activity {
+    font-size: 5rem;
+    position: relative;
+    margin: 5% 40%;
+}
+
+html {
+    background: #111;
+    box-sizing: border-box;
+    font-family: "Vollkorn", sans-serif;
+    font-size: 1rem;
+    color: #E3B748;
+    font-family: sans-serif;
+}
+
+article {
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 150px;
+    margin-bottom: 120px;
+    height: 50%;
+}
+
+@media screen and (min-width: 700px) {
+    body>article {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    figure {
+        background: #E3B748;
+        width: calc(40% + 1px);
+        height: 100vh;
+        margin: 0 auto 10vh 0;
+        position: sticky;
+        top: 0;
+        overflow: hidden;
+        box-shadow: 4px -4px 8px rgba(0, 0, 0, 10);
+    }
+    figure::after {
+        content: "";
+        position: absolute;
+        top: 5vmin;
+        right: 5vmin;
+        bottom: 5vmin;
+        left: 45%;
+        /* border: 2px dashed #E3B748; */
+        /* outline: 3px solid #E3B748; */
+        outline-offset: -5vmin;
+        /* backdrop-filter: grayscale(1); */
+        pointer-events: none;
+    }
+    figure:nth-of-type(2n)::after {
+        right: 45%;
+        left: 5vmin;
+    }
+    section {
+        background: #141414;
+        width: calc(50% + 1px);
+        height: 100vh;
+        margin: 0 0 10vh auto;
+        position: sticky;
+        top: 0;
+        /* overflow: hidden; */
+        padding: 5vmin;
+        box-shadow: -4px -4px 8px rgba(0, 0, 0, 0.4);
+    }
+    figure:nth-of-type(1),
+    section:nth-of-type(1) {
+        margin: 0 0 10vh 0;
+        width: 50%;
+    }
+    figure:nth-of-type(2n) {
+        margin: 0 0 10vh auto;
+        box-shadow: -4px -4px 8px rgba(0, 0, 0, 0.4);
+    }
+    section:nth-of-type(2n) {
+        margin: 0 auto 10vh 0;
+        box-shadow: 4px -4px 8px rgba(0, 0, 0, 0.4);
+    }
+    figure:last-of-type,
+    section:last-of-type {
+        margin-bottom: 0;
+    }
+    section::before {
+        background: inherit;
+        z-index: 1;
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 7vmin;
+        height: 7vmin;
+        transform: translate(calc(-50% + 1px), -50%) rotate(-45deg);
+        clip-path: polygon(-15% -15%, 110% 0%, 0% 110%);
+        box-shadow: -4px -2px 8px rgba(0, 0, 0, 0.4);
+        border-radius: 1.5vmin 0 0 0;
+    }
+    section:nth-of-type(2n)::before {
+        left: auto;
+        right: 0;
+        transform: translate(calc(50% - 1px), -50%) rotate(-45deg) scale(-1);
+    }
+    section::after {
+        content: "";
+        position: absolute;
+        top: 5vmin;
+        right: 45%;
+        bottom: 5vmin;
+        left: 5vmin;
+        border: 2px dashed #E3B748;
+        outline: 1px solid #E3B748;
+        outline-offset: -5vmin;
+        /* backdrop-filter: invert(0.2); */
+        backdrop-filter: blur(1px);
+        pointer-events: none;
+    }
+    section:nth-of-type(2n):after {
+        right: 5vmin;
+        left: 45%;
+    }
+    figure img {
+        min-width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+        object-position: center;
+        filter: grayscale(100%);
+    }
+    section>div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        padding: 1rem;
+    }
+    h1,
+    h2 {
+        margin: 15% 0 auto;
+        font-size: calc(4vmin + 2vmax);
+        text-align: center;
+        font-weight: 700;
+        line-height: 1;
+        word-spacing: 0.5rem;
+        color: #E3B748;
+    }
+    p {
+        text-align: right;
+        width: 100%;
+        font-family: "Cormorant", serif;
+        font-weight: 400;
+        font-style: italic;
+        font-size: calc(1.5vmin + 1.75vmax);
+        margin-bottom: 5%;
+    }
+    a {
+        color: transparent;
+        -webkit-text-stroke: 2px #b18f39;
+        text-decoration: none;
+        font-weight: 500;
+        letter-spacing: 2px;
+        font-size: 2rem;
+    }
+    a:hover,
+    a:focus {
+        -webkit-text-stroke: 1px rgb(245, 245, 239);
+        color: rgb(245, 245, 239);
+    }
+    h1:hover,
+    h2:hover {
+        color: transparent;
+        -webkit-text-stroke: 1px rgb(245, 245, 239);
+    }
+    p:hover {
+        -webkit-text-stroke: 1px rgb(245, 245, 239);
+    }
+}
