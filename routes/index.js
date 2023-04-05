@@ -13,5 +13,12 @@ router.get('/intern_section', (req, res) => {
     res.render('intern_section', params)
 });
 
+router.get('/developers', (req, res) => {
+    // res.send('hello!! this is express from node js')
+    const params = { 'title': 'developers' }
+    res.render('developers', params)
+});
+
+
 
 module.exports = router;
