@@ -9,6 +9,9 @@ https://docs.google.com/document/d/1KTZPB5GZ-kxoSdzPDAGQ0il40N22kGBFc_lXH9375UU/
   ### Clone Repository: 
     https://github.com/INSEES-Website/INSEES.git
 
+    cd INSEES
+    npm i
+
 ## EVERYTIME YOU WORK ON A NEW ISSUE:
 ### Pull the main
       git pull origin main 
@@ -20,4 +23,8 @@ https://docs.google.com/document/d/1KTZPB5GZ-kxoSdzPDAGQ0il40N22kGBFc_lXH9375UU/
     git add .
     git commit -m “footer details added”
 ### Push
-    git push --set-upstream origin don_homescreenfooter
+    git push -u origin your_branch_name
+
+### How to Run 
+    node app.js
+    localhost:3000
