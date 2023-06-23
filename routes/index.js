@@ -7,10 +7,10 @@ router.get('/', (req, res) => {
     res.render('index', params);
 });
 
-router.get('/intern_section', (req, res) => {
+router.get('/our_activities', (req, res) => {
     // res.send('hello!! this is express from node js')
-    const params = { 'title': 'intern_section' }
-    res.render('intern_section', params)
+    const params = { 'title': 'our_activities' }
+    res.render('our_activities', params)
 });
 
 
