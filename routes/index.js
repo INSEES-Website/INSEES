@@ -13,5 +13,12 @@ router.get('/our_activities', (req, res) => {
     res.render('our_activities', params)
 });
 
+router.get('/developers', (req, res) => {
+    // res.send('hello!! this is express from node js')
+    const params = { 'title': 'developers' }
+    res.render('developers', params)
+});
+
+
 
 module.exports = router;
