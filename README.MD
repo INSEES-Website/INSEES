@@ -8,7 +8,7 @@ https://docs.google.com/document/d/1KTZPB5GZ-kxoSdzPDAGQ0il40N22kGBFc_lXH9375UU/
 	
   ### Clone Repository: 
     git clone https://github.com/INSEES-Website/INSEES.git
-  # Next step
+  #### Next step
     cd INSEES
     npm i
 
